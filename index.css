@@ -1,0 +1,86 @@
+:root {
+    --black: #000000;
+    --yellow: #f7ae25;
+}
+
+.highlight{ 
+    font-weight: bold;
+    color: var(--yellow); 
+}
+
+
+
+body{
+    background-color: white;
+    padding: 50px 150px;
+    font-size: 18px;
+    color: var(--black);
+}
+
+
+/* header */
+header{
+    display: flex;
+    gap: 40px;
+}
+
+header img {
+    min-height: 200px;
+    max-height: 200px;
+}
+
+header #information{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header #information > span:nth-child(1){
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+header #information > div{
+    display: flex;
+    gap: 15px;
+}
+
+header #information > div a{
+    color: var(--black);
+}
+
+
+/* main */
+main{
+    margin-top: 20px;
+    border-top: var(--black) 1px solid;
+}
+
+
+/* userContainer */
+.userContainer{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    padding: 50px 0px;
+    border-bottom: var(--black) 1px solid;
+}
+
+.userContainer > span:nth-child(1){
+    flex: 0 0 15%;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.userContainer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userContainer > div p {
+    padding: 0;
+    margin: 3px 0px;
+}
